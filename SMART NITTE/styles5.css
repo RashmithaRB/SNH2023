@@ -1,0 +1,106 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-image: url('farm22.jpg'); 
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+  }
+  
+  .farmer-details {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  }
+  
+  .details-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+    cursor: pointer;
+  transition: background-color 0.3s;
+  }
+  .table-container {
+    overflow-x: auto;
+  }
+  .details-table th,
+  .details-table td {
+    border: 1px solid #ccc;
+    padding: 8px;
+    text-align: left;
+  }
+  
+  .details-table th {
+    background-color: #f4f4f4;
+    font-weight: bold;
+  }
+  
+  .details-table td {
+    color: #333;
+  }
+  .details-table tbody tr:hover {
+    background-color: #f9f9f9;
+  }
+  
+  .note {
+    margin-top: 20px;
+    font-style: italic;
+    color: #777;
+  }
+  
+  .farmer-details-extra {
+    margin-top: 20px;
+    display: none;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+  }
+  
+  .farmer-details-extra.active {
+    display: block;
+    background-color: #f4f4f4;
+  }
+  .table-of-contents {
+    background-color: #f4f4f4;
+    padding: 10px;
+    border-radius: 5px;
+    margin-bottom: 20px;
+  }
+  
+  .table-of-contents h2 {
+    margin-top: 0;
+    font-size: 1.2em;
+  }
+  
+  .table-of-contents ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+  }
+  
+  .table-of-contents li {
+    margin-bottom: 5px;
+  }
+  
+  .table-of-contents a {
+    text-decoration: none;
+    color: #333;
+  }
+  
+  .table-of-contents a:hover {
+    color: #000;
+    font-weight: bold;
+  }
+  .toc-columns {
+    display: flex;
+  }
+  
+  .toc-column {
+    flex: 1;
+  }

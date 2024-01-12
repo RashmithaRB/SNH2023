@@ -1,0 +1,68 @@
+body {
+    font-family: 'Arial', 'sans-serif';
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background-image: url("Discback.jpg");
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    min-height: 100vh;
+}
+
+header {
+    background-color: green;
+    color: #fff;
+    text-align: center;
+    padding: 20px;
+    width: 100%;
+}
+
+.box-container {
+    display: flex;
+    justify-content: center;
+    align-items: center; /* Align items at the center vertically */
+    margin: 50px 0; /* Add more margin for spacing */
+}
+
+.box {
+    font-family: 'Comfortaa', cursive;
+    width: 200px; /* Make the boxes wider */
+    height: 300px; /* Make the boxes taller */
+    padding: 30px; /* Increase padding for better spacing */
+    margin: 0 15px;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    text-align: center;
+    transition: transform 0.3s ease;
+}
+.box-container img {
+    width: 120px;
+    height: 120px;
+    margin-bottom: 30px;
+  }
+.box:hover {
+    transform: scale(1.05);
+}
+
+a {
+    text-decoration: none;
+    color: #333;
+    font-weight: bold;
+    font-size: 30px;
+}
+
+a:hover {
+    color: #0066cc;
+}
+
+footer {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 10px;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}

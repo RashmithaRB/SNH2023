@@ -1,0 +1,101 @@
+/* Basic Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  /* Body Styles */
+  body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    background-image: url('bg1.jpg'); /* Replace with your image path */
+    background-size: cover;
+    background-position: center;
+    margin: 0;
+
+  }
+  
+  
+  /* Header Styles */
+  header {
+    background-color: #00bcd4;
+    color: #fff;
+    text-align: center;
+    padding: 50px 0;
+    background-image: linear-gradient(to bottom right, #00bcd4, #5bc0de);
+  }
+  header h1 {
+    font-size: 3em;
+    margin-bottom: 20px;
+  }
+  header p{
+    font-size: 18px;
+    margin-top: 10px;
+    font-style: italic;
+    margin-bottom: 30px;
+  }
+  /* Main Styles */
+  main {
+    padding: 50px;
+  }
+  
+  .user-type {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin-top: 50px;
+  }
+  
+  .user-type .farmer,
+  .user-type .user {
+    text-align: center;
+    width: 45%;
+    padding: 40px;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    background-color: #fff;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+    transition: transform 0.3s ease;
+  }
+  
+  .user-type .farmer:hover,
+  .user-type .user:hover {
+
+    transform: translate(-10px);
+    box-shadow: 0 6px 8px rgba(0,0,0,0.2);
+  }
+  
+  .user-type img {
+    width: 120px;
+    height: 120px;
+    margin-bottom: 30px;
+  }
+  .user-type h2{
+    font-size: 24px;
+    margin-bottom: 15px;
+  }
+  .user-type p{
+    font-size: 16px;
+    margin-bottom: 25px;
+  }
+  .user-type .btn{
+    display: inline-block;
+  padding: 10px 20px;
+  text-decoration: none;
+  background-color: #00bcd4;
+  color: #fff;
+  border-radius: 5px;
+  transition: background-color 0.3s ease;
+  }
+  .user-type .btn:hover {
+    background-color: #008ba3;
+  }
+  /* Footer Styles */
+  footer {
+    text-align: center;
+    padding: 20px;
+    background-color: #333;
+    color: #fff;
+  }
+  

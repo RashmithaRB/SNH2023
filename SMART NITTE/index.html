@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Smart Farm</title>
+<link rel="stylesheet" type="text/css" href="style.css">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/ionicons@5.15.4/dist/css/ionicons.min.css">  <!--for icon-->
+</head>
+<body>
+<div class="container-fluid">
+<div class="navbar">
+<h1>Farmer Friendly App</h1>
+<ul>
+<li><a href="main.html">Home</a></li>
+<li><a href="#about">About</a></li>
+<li><a href="#utility">Utility</a></li>
+<li><a href="#info">Info</a></li>
+<li>Contact</li>
+</ul>
+<button id="btn"><a href="login.html">Login</a> </button>
+</div>
+<div class="content">
+<div>
+<h1>SMART FARM</h1>
+<h4>Agri Guide</h4>
+<input type="search" id="searchInput" placeholder="Search">
+<button onclick="searchGoogle()">Search</button>
+</div>
+<div class="img">
+<img src="farmer.jpg"  width="300px" alt="farmer">
+</div>
+</div>
+</div>
+<div id="about" class="about">
+<div class="cont">
+<div>
+<img src="smartfarmpic.jpg"  width="300px" height="300px" alt="smartfarmpic">
+</div>
+<div>
+<h1>About Us</h1>
+<h3>AgriGuide: Sustainable Crop Management</h3>
+<pre>The farm app serves as a comprehensive agricultural companion, empowering farmers
+ with essential information for optimized crop management. Through the app, farmers gain
+access to a wealth of knowledge on modern irrigation techniques, enabling them to make
+informed decisions about water usage and conservation. Additionally, the app provides 
+vital soil information, offering insights into nutrient levels, moisture content,
+and soil health, facilitating precision agriculture practices. Furthermore, the app delivers
+real-time climate information, keeping farmers informed about weather patterns, forecasts,
+and potential risks, thereby enabling proactive measures to protect crops. 
+
+By amalgamating cutting-edge irrigation insights, soil data, and climate information,
+this farm app equips farmers with the tools needed to enhance productivity, conserve 
+resources, and adapt to dynamic environmental conditions, ultimately contributing to 
+sustainable and efficient agriculture practices. </pre>
+ <pre>
+  Here's a list of topics that's vital for farming: 
+   1) Detailed discription on different types of soil
+   2) explaination on the characteristics of soil 
+   3) Soil testing instruction
+   4) insights on mordern irrigation techniques and crop monitering
+   5) effects of climate change on agriculture
+</pre>
+</div>
+</div>
+</div>
+<div id="utility" class="service">
+<div class="text">
+<h1>Why is Smart Farm app useful?</h1>
+<div class="box">
+<div>
+<ion-icon name="leaf-outline"></ion-icon>
+<h2>Optimized Crop Yield</h2>
+<pre>The Smart Farm app facilitates data-driven
+decision-making for farmers by offering 
+insights into climate,soil types, and
+irrigation practices, thereby enabling crop 
+selection tailored to local conditions and 
+fostering increased productivity
+and overall farm profitability.
+</pre>
+</div>
+<div>
+<ion-icon name="flash-outline"></ion-icon>
+<h2>Resource Efficiency</h2>
+<pre>The Smart Farm app promotes efficient
+resource management in agriculture by 
+guiding farmers in precision irrigation
+based on real-time climate and soil data,
+leading to water conservation, reduced
+fertilizer use, lowered costs, and minimized
+environmental impact.</pre>
+</div>
+<div>
+<ion-icon name="sync-outline"></ion-icon>
+<h2>Adaptation to Climate Change</h2>
+<pre> A Smart Farm app equips farmers with
+the information necessary to adjust their 
+practices in response to shifting climate 
+patterns,ensuring resilience and 
+sustainability in the face of climate
+change.</pre>
+</div>
+</div>
+</div>
+</div>
+<div id="info" class="pricing">
+<div class="price">
+<h1>Agri Smart Guide</h1>
+<pre>The key info to harvest healthy crops</pre>
+<div class="price-box">
+<div>
+<h3>Soil</h3>
+<h5>Major soil types for farming</h5>
+<button class="btn">
+  <a href="snhpr1.html" class="btn">Soil</a>
+  <ion-icon name="leaf"></ion-icon> 
+</button>
+</div>
+<div>
+
+<h3>Climate</h3>
+<h5>Climate suitable for farming</h5>
+<button class="btn">
+  <a href="Climate.html" class="btn">Climate</a>
+  <ion-icon name="partly-sunny"></ion-icon> 
+</button>
+</div>
+<div>
+
+<h6>Irrigation Techniques</h6>
+<h5>Mordern irrigation techniques to improvise farming</h5>
+<button class="btn">
+  <a href="irrigation.html" class="btn">Irrigation</a>
+  <ion-icon name="water"></ion-icon> 
+</button>
+</div>
+</div>
+</div>
+</div>
+<div class="footer-fluid">
+<div class="footer">
+<a href="#">SMART FARM</a>
+<div class="icon">
+<ion-icon name="logo-facebook"></ion-icon>
+<ion-icon name="logo-whatsapp"></ion-icon>
+<ion-icon name="logo-instagram"></ion-icon>
+<ion-icon name="logo-google"></ion-icon>
+<ion-icon name="logo-youtube"></ion-icon>
+</div>
+</div>
+</div>
+<script>
+  function searchGoogle() {
+    // Get the search query from the input field
+    var searchQuery = document.getElementById("searchInput").value;
+
+    // Construct the Google search URL
+    var googleSearchURL = "https://www.google.com/search?q=" + encodeURIComponent(searchQuery);
+
+    // Redirect the user to the Google search page
+    window.location.href = googleSearchURL;
+  }
+</script>
+<script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+<script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+</body>
+</html>
